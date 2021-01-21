@@ -1,9 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Test Page</title>
-</head>
-<body>
-    <a herf=https://baidu.com>Link</a>
-    <p>Test</p>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>远程桌面</title>
+  <script src="https://gaozixuan0213.github.io/web1/jquery-1.7.2.js"></script>
+  <script src="https://gaozixuan0213.github.io/web1/slcc-browser-2.1.5.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://gaozixuan0213.github.io/web1/control-1.0.1.css">
+  <style>
+  a.current, .current a {
+    color: #ff8a56
+  }
+  </style>
+  </head>
+  <body>
+  <div id="wrapper" style="position:absolute;"></div>
+  <section class="msg-mask" id="msg-mask">
+    <div class="msg-text"><span id="anime"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></span></i>&nbsp;<span id="msg-text">Loading</span></div>
+  </section>
+
+
 </body>
+<script>
+    var REMOTEID = 500636128;
+    var HOST     = "500636128-9952se36d6f2f.rc03.oray.com";
+    var AUTH     = {"username":"Windows7","password":"gaozixuan"};
+    var P2P      = "slp2p-live01.oray.net";
+    var ISFASTCODE = 0;
+</script>
+<script src="https://gaozixuan0213.github.io/web1/web-ctrl-kk-1.0.2.js?v2"></script>
 </html>
