@@ -20,7 +20,7 @@ if (AUTH) {
 }
   var topSize = 0;
 
-// START 向日葵远程桌面
+// START 远程桌面
 var client = new SunloginControl.Client(options);
 
 // 页面unload关闭客户端连接
@@ -32,7 +32,7 @@ updateMessage('开始连接');
 
 client
 .connect() // 客户端连接开始
-// 向日葵客户端流程： 登录验证 => P2P连接，嵌入SDK不需要
+// 客户端流程： 登录验证 => P2P连接，嵌入SDK不需要
 .then(() => {
   updateMessage('正在登录');
   if (ISFASTCODE) {
